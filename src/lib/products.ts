@@ -10,6 +10,7 @@ function mapRow(row: Record<string, unknown>): Product {
     blurb: String(row.blurb ?? ""),
     price_cents: Number(row.price_cents ?? 0),
     accent: String(row.accent ?? "amber"),
+    category: String(row.category ?? "fantasia"),
     cover_path: (row.cover_path as string | null) ?? null,
     package_path: String(row.package_path),
     included_in_app: Boolean(row.included_in_app),

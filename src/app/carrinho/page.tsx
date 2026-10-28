@@ -29,6 +29,7 @@ export default function CartPage() {
             blurb: (row.blurb as string) ?? "",
             price_cents: (row.price_cents as number) ?? 0,
             accent: (row.accent as string) ?? "amber",
+            category: (row.category as string) ?? "fantasia",
             cover_path: (row.cover_path as string | null) ?? null,
             package_path: row.package_path as string,
             included_in_app: Boolean(row.included_in_app),
